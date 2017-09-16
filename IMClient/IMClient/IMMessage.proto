@@ -1,6 +1,13 @@
-syntax = "proto2";
+//https://github.com/alexeyxo/protobuf-swift
 
+syntax = "proto2";//定义版本号proto2/proto3
+
+//message是消息定义的关键字，相当于struct/class
 message UserInfo {
+//required前缀表示该字段为必要字段，即在序列化和反序列化之前该字段必须已经被赋值
+//optional前缀表示该字段为可选字段，即可以没有赋值
+//repeated前缀通常被用在数组字段中
+//标签数字1，2，3则表示不同的字段在序列化后的二进制数据中的布局位置，需要注意的是该值在同一message中不能重复
 	required string name = 1;
 	required int32 level = 2;
 	required string icon = 3;
@@ -17,3 +24,7 @@ message GiftMessage {
 	required string giftIcon = 3;
 	required int32 giftCount = 4;
 }
+
+
+//这个文件在客户端和服务端用同一个即可，定义完成后打开终端cd到当前目录，输入命令
+//protoc IMMessage.proto --swift_out="./" 以swift编译导出到当前目录下

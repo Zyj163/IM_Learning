@@ -55,11 +55,7 @@ class ViewController: UIViewController {
 		guard let text = textField.text else {
 			return
 		}
-		var length = text.characters.count
-		let lengthData = Data(bytes: &length, count: 4)
-		
-		guard let data = text.data(using: .utf8) else {return}
-		client.sendMsg(lengthData + data)
+		client.sendMsg(text)
 	}
 	
 	private func readMsg(_ data: Data) {

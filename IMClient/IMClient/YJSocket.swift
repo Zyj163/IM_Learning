@@ -25,8 +25,14 @@ extension YJSocket {
 		return tcpClient.close().0
 	}
 	
-	func sendMsg(_ msg: Data) {
-		_ = tcpClient.send(data: msg)
+    func sendMsg(_ msg: String) {
+        
+        var length = msg.characters.count
+        let lengthData = Data(bytes: &length, count: 4)
+        
+        guard let data = msg.data(using: .utf8) else {return}
+        
+        _ = tcpClient.send(data: lengthData + data)
 	}
 	
 	func readMsg(_ msg: Data) -> String? {

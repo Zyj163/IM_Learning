@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359E4AC91F6CAD6C00CF57A7 /* IMClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359E4AC81F6CAD6C00CF57A7 /* IMClientManager.swift */; };
 		5727707B1EB1E07300C23443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727707A1EB1E07300C23443 /* AppDelegate.swift */; };
 		5727707D1EB1E07300C23443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727707C1EB1E07300C23443 /* ViewController.swift */; };
 		5727707F1EB1E07300C23443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5727707E1EB1E07300C23443 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		359E4AC81F6CAD6C00CF57A7 /* IMClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMClientManager.swift; sourceTree = "<group>"; };
 		572770771EB1E07300C23443 /* IMServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5727707A1EB1E07300C23443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5727707C1EB1E07300C23443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				5727707A1EB1E07300C23443 /* AppDelegate.swift */,
 				5727707C1EB1E07300C23443 /* ViewController.swift */,
 				572770891EB1E22D00C23443 /* IMServerManager.swift */,
+				359E4AC81F6CAD6C00CF57A7 /* IMClientManager.swift */,
 				5727707E1EB1E07300C23443 /* Assets.xcassets */,
 				572770801EB1E07300C23443 /* Main.storyboard */,
 				572770831EB1E07300C23443 /* Info.plist */,
@@ -164,6 +167,7 @@
 				5727707B1EB1E07300C23443 /* AppDelegate.swift in Sources */,
 				5727708A1EB1E22D00C23443 /* IMServerManager.swift in Sources */,
 				572770931EB1E6A400C23443 /* ysocket.swift in Sources */,
+				359E4AC91F6CAD6C00CF57A7 /* IMClientManager.swift in Sources */,
 				572770941EB1E6A400C23443 /* ytcpsocket.c in Sources */,
 				572770971EB1E6A400C23443 /* yudpsocket.swift in Sources */,
 				572770951EB1E6A400C23443 /* ytcpsocket.swift in Sources */,
